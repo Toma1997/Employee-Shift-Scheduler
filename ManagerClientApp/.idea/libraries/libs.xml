@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../Faks- Softversko i Informaciono Inzenjerstvo/3. Godina/2. Semestar/Internet Softverske Arhitekture/Vezbe/Spring Framework libs/spring-framework-5.1.7.RELEASE/libs" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../Faks- Softversko i Informaciono Inzenjerstvo/3. Godina/2. Semestar/Internet Softverske Arhitekture/Vezbe/Spring Framework libs/spring-framework-5.1.7.RELEASE/libs" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../../Faks- Softversko i Informaciono Inzenjerstvo/3. Godina/2. Semestar/Internet Softverske Arhitekture/Vezbe/Spring Framework libs/spring-framework-5.1.7.RELEASE/libs" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../../Faks- Softversko i Informaciono Inzenjerstvo/3. Godina/2. Semestar/Internet Softverske Arhitekture/Vezbe/Spring Framework libs/spring-framework-5.1.7.RELEASE/libs" recursive="false" type="SOURCES" />
+  </library>
+</component>

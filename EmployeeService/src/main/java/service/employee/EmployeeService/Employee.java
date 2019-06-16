@@ -1,7 +1,8 @@
 package service.employee.EmployeeService;
 
 public class Employee {
-    private String firstName, lastName, email, phone, position;
+    private Integer employeeId;
+    private String firstName, lastName, email, phone;
     private int birthYear;
     private double yearsExperience;
 
@@ -9,15 +10,23 @@ public class Employee {
 
     }
 
-    public Employee(String firstName, String lastName, String email, String phone, String postion, int birthYear, double yearsExperience) {
+    public Employee(Integer employeeId, String firstName, String lastName, String email, String phone, int birthYear, double yearsExperience) {
+        this.employeeId = employeeId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.phone = phone;
-        this.position = postion;
         this.birthYear = birthYear;
         this.yearsExperience = yearsExperience;
 
+    }
+
+    public Integer getEmployeeId() {
+        return employeeId;
+    }
+
+    public void setEmployeeId(Integer employeeId) {
+        this.employeeId = employeeId;
     }
 
     public String getFirstName() {
@@ -52,14 +61,6 @@ public class Employee {
         this.phone = phone;
     }
 
-    public String getPosition() {
-        return position;
-    }
-
-    public void setPosition(String position) {
-        this.position = position;
-    }
-
     public int getBirthYear() {
         return birthYear;
     }
@@ -83,7 +84,6 @@ public class Employee {
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
                 ", phone='" + phone + '\'' +
-                ", position='" + position + '\'' +
                 ", birthYear=" + birthYear +
                 ", yearsExperience=" + yearsExperience +
                 '}';

@@ -29,7 +29,13 @@ public class EmployeeServiceController {
         service.addEmployee(newEmployee);
     }
 
-    // example -> localhost:8080/all-employees/2
+    // example -> localhost:8080/replace-employees/2
+    @PutMapping("/replace-employee/{id}")
+    public Employee replaceEmployee(@PathVariable int id, @RequestBody Employee newEmployee){
+        return service.replaceEmployee(id, newEmployee);
+    }
+
+    // example -> localhost:8080/delete-employees/2
     @DeleteMapping("/delete-employee/{id}")
     public String deleteEmployee(@PathVariable int id){
         return service.deleteEmployee(id);

@@ -23,6 +23,6 @@ public class ManagerClientApp {
             password = input.nextLine();
         } while(!email.equals("toma.joksimovic@gmail.com") || !password.equals("toma1997+"));
 
-
+        System.out.println("Manager is logged in!");
     }
 }

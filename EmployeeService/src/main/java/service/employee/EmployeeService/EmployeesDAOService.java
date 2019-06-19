@@ -32,6 +32,12 @@ public class EmployeesDAOService {
         return employee;
     }
 
+    public Employee replaceEmployee(int id, Employee newEmployee){
+        this.employees.remove(id);
+        this.employees.add(newEmployee);
+        return newEmployee;
+    }
+
     public Employee findOne(int id){
         for(Employee employee: this.employees){
             if(employee.getEmployeeId() == id){

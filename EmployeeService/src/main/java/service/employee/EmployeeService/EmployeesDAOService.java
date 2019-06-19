@@ -48,10 +48,12 @@ public class EmployeesDAOService {
     }
 
     public String deleteEmployee(int id){
-
-        if(id >= 0 && id<employees.size()){
-            employees.remove(id-1);
-            return "OK, employee deleted";
+        for(Employee e: employees){
+            if(e.getEmployeeId() == id){
+                employees.remove(e);
+                employeeCount--;
+                return "OK, employee deleted";
+            }
         }
         return "ID not valid";
 

@@ -4,7 +4,9 @@
     <list default="true" id="0694fc9a-d651-40db-9c6e-96be99c39938" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../EmployeeService/src/main/java/service/employee/EmployeeService/EmployeeServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EmployeeService/src/main/java/service/employee/EmployeeService/EmployeeServiceController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EmployeeService/src/main/java/service/employee/EmployeeService/EmployeesDAOService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EmployeeService/src/main/java/service/employee/EmployeeService/EmployeesDAOService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ManagerClientApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ManagerClientApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/client/manager/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/client/manager/Connection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/client/manager/ManagerClientApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/client/manager/ManagerClientApp.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -15,20 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/client/manager/Connection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="32" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -44,8 +33,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/app/client/manager/spring.xml" />
-        <option value="$PROJECT_DIR$/src/app/client/manager/ManagerClientApp.java" />
         <option value="$PROJECT_DIR$/src/app/client/manager/Connection.java" />
+        <option value="$PROJECT_DIR$/src/app/client/manager/ManagerClientApp.java" />
       </list>
     </option>
   </component>
@@ -70,17 +59,6 @@
               <item name="ManagerClientApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="ManagerClientApp" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ManagerClientApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManagerClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManagerClientApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManagerClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -94,8 +72,8 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560966953002" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Faks- Softversko i Informaciono Inzenjerstvo/3. Godina/2. Semestar/Internet Softverske Arhitekture/Vezbe/Spring Framework libs/spring-framework-5.1.7.RELEASE/libs" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560985624499" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EmployeeService" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -119,6 +97,26 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="ManagerClientApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="app.client.manager.ManagerClientApp" />
+      <module name="ManagerClientApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.client.manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ManagerClientApp" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -131,16 +129,15 @@
       <updated>1560702717025</updated>
       <workItem from="1560702720586" duration="1933000" />
       <workItem from="1560711576642" duration="402000" />
-      <workItem from="1560965955117" duration="973000" />
+      <workItem from="1560965955117" duration="12936000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3308000" />
+    <option name="totallyTimeSpent" value="15271000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -149,9 +146,10 @@
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4274892" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -184,20 +182,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/client/manager/ManagerClientApp.java">
+    <entry file="file://$PROJECT_DIR$/src/app/client/manager/Connection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+        <state relative-caret-position="168">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/client/manager/Connection.java">
+    <entry file="file://$PROJECT_DIR$/src/app/client/manager/ManagerClientApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="32" />
+        <state relative-caret-position="-469">
+          <caret line="61" column="25" lean-forward="true" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -280,7 +278,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>libs</last-edited>
+          <last-edited>lib</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -25,7 +25,7 @@ public class EmployeeServiceController {
 
     //localhost:8080/add-employee
     @PostMapping("/add-employee")
-    public void addNewBook(@RequestBody Employee newEmployee){
+    public void addNewEmployee(@RequestBody Employee newEmployee){
         service.addEmployee(newEmployee);
     }
 
@@ -35,7 +35,7 @@ public class EmployeeServiceController {
         return service.replaceEmployee(id, newEmployee);
     }
 
-    // example -> localhost:8080/delete-employees/2
+    // example -> localhost:8080/delete-employee/2
     @DeleteMapping("/delete-employee/{id}")
     public String deleteEmployee(@PathVariable int id){
         return service.deleteEmployee(id);

@@ -217,7 +217,7 @@ public class ManagerClientApp {
 
             String shiftsScheduling = Connection.getOrDelete("http://localhost:1313/all-shifts", "GET");
             String [] tempShiftsList = shiftsScheduling.substring(1, shiftsScheduling.length()-2).split("},");
-            String [][] shiftsList = new String[tempShiftsList.length][8]; // every shift has 7 attributes
+            String [][] shiftsList = new String[tempShiftsList.length][6]; // every shift has 7 attributes
 
             for(int i = 0; i < tempShiftsList.length; i++){ // for all shifts
                 String [] shiftAttributes = tempShiftsList[i].substring(1).split(",");
@@ -228,12 +228,92 @@ public class ManagerClientApp {
                 }
             }
 
-            // NAPRAVITI ALGORITAM ZA RASPOREDJIVANJE PO SMENAMA
+            // save scheduled shifts with empployees ID's to PUT on Shift Web Service
+            ArrayList<ArrayList<Integer>> scheduledShifts = shiftScheduler(shiftsList, employeesList);
+
+            for(int i = 0; i < scheduledShifts.size(); i++){
+                String payload =  "{\"employees\":" + scheduledShifts.get(i) + "}"; // take list with employee's id's for current shift
+                String response = Connection.postOrPut("http://localhost:1313/set-employees-to-shift/"+ i+1, payload, "PUT");
+                System.out.println(response);
+            }
+
+            shiftsScheduling = Connection.getOrDelete("http://localhost:1313/all-shifts", "GET");
+            tempShiftsList = shiftsScheduling.substring(1, shiftsScheduling.length()-2).split("},");
+
+            System.out.println("Here is the list of all shifts with scheduled employees id's!");
+            for(int i = 0; i < tempShiftsList.length; i++){
+                tempShiftsList[i] = tempShiftsList[i].substring(1);
+                System.out.println(tempShiftsList[i]);
+            }
 
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-
     }
+
+    // this algorithm will reorder peoples for shifts
+    // and it will return matrix with 4 lists as shifts and element in list is employee id
+    public static ArrayList<ArrayList<Integer>> shiftScheduler(String [][] shifts, String [][] employees){
+
+        ArrayList<ArrayList<Integer>> result = new ArrayList<>();
+        ArrayList<Integer> morningShift = new ArrayList<>();
+        ArrayList<Integer> dayShift = new ArrayList<>();
+        ArrayList<Integer> afternoonShift = new ArrayList<>();
+        ArrayList<Integer> nightShift = new ArrayList<>();
+
+        employees = insertionSort(employees, 3); // empolyees are sorted in descending order by experience
+
+        shifts = insertionSort(shifts, 4); // shifts are sorted in descending order by required experience
+
+        boolean primaryPopulated = false;
+        for(int i = 0; i < employees.length; i++){
+            // if (employee has experience AND (primaryPlacesNOTPopulated || (NOT reached max places AND primaryPlacesPopulated)
+            if(Double.parseDouble(employees[i][3]) >= 4 &&
+                    (Integer.parseInt(shifts[0][2]) > nightShift.size() || (Integer.parseInt(shifts[0][3]) >= nightShift.size() && primaryPopulated) )){ // leastExperience = 4, shift = night
+                nightShift.add(Integer.parseInt(employees[i][0])); // add employee id
+
+            } else if(Double.parseDouble(employees[i][3]) >= 3 &&
+                    (Integer.parseInt(shifts[1][2]) > afternoonShift.size() || (Integer.parseInt(shifts[1][3]) >= afternoonShift.size() && primaryPopulated) )){ // leastExperience = 3, shift = afternoon
+                afternoonShift.add(Integer.parseInt(employees[i][0])); // add employee id
+
+            } else if(Double.parseDouble(employees[i][3]) >= 2 &&
+                    (Integer.parseInt(shifts[2][2]) > morningShift.size() || (Integer.parseInt(shifts[2][3]) >= morningShift.size() && primaryPopulated) )){ // leastExperience = 2, shift = morning
+                morningShift.add(Integer.parseInt(employees[i][0])); // add employee id
+
+            } else if(Double.parseDouble(employees[i][3]) >= 1 &&
+                    (Integer.parseInt(shifts[3][2]) > dayShift.size() || (Integer.parseInt(shifts[3][3]) >= dayShift.size() && primaryPopulated) )) { // leastExperience = 1, shift = day
+                dayShift.add(Integer.parseInt(employees[i][0])); // add employee id
+
+            } else { // primary positions are populated, for rest of emplyees search for shift
+                if(primaryPopulated){ // maximum places for shifts are reached
+                    break;
+                } else {
+                    primaryPopulated = true;
+                    i--;
+                }
+            }
+        }
+        result.add(morningShift);
+        result.add(dayShift);
+        result.add(afternoonShift);
+        result.add(nightShift);
+        return result;
+    }
+
+    // for sorting employees
+    public static String [][] insertionSort(String arr[][], int experienceAttr) {
+        for (int i = 1; i < arr.length; ++i) {
+            String [] key = arr[i];
+            int j = i - 1;
+
+            while (j >= 0 && Double.parseDouble(arr[j][experienceAttr])  < Double.parseDouble(key[experienceAttr])) {
+                arr[j + 1] = arr[j];
+                j = j - 1;
+            }
+            arr[j + 1] = key;
+        }
+        return arr;
+    }
+
 }

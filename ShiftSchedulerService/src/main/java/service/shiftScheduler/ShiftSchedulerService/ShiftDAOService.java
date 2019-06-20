@@ -11,16 +11,16 @@ public class ShiftDAOService {
     private static List<Shift> shifts = new ArrayList<>();
 
     static {
-        Shift shift1 = new Shift(1, "morning", 4, 10, 2, 4, 2);
+        Shift shift1 = new Shift(1, "morning", 2, 4, 2);
         shifts.add(shift1);
 
-        Shift shift2 = new Shift(2, "day", 10, 16, 2, 2, 1);
+        Shift shift2 = new Shift(2, "day", 2, 4, 1);
         shifts.add(shift2);
 
-        Shift shift3 = new Shift(3, "afternoon", 16, 22, 3, 5, 3);
+        Shift shift3 = new Shift(3, "afternoon", 3, 5, 3);
         shifts.add(shift3);
 
-        Shift shift4 = new Shift(4, "night", 22, 4, 2, 4, 4);
+        Shift shift4 = new Shift(4, "night", 2, 5, 4);
         shifts.add(shift4);
     }
 

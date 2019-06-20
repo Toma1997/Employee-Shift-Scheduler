@@ -7,7 +7,6 @@
       <change beforePath="$PROJECT_DIR$/src/app/client/manager/ManagerClientApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/client/manager/ManagerClientApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ShiftSchedulerService/src/main/java/service/shiftScheduler/ShiftSchedulerService/Shift.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ShiftSchedulerService/src/main/java/service/shiftScheduler/ShiftSchedulerService/Shift.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ShiftSchedulerService/src/main/java/service/shiftScheduler/ShiftSchedulerService/ShiftDAOService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ShiftSchedulerService/src/main/java/service/shiftScheduler/ShiftSchedulerService/ShiftDAOService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ShiftSchedulerService/src/main/java/service/shiftScheduler/ShiftSchedulerService/ShiftServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ShiftSchedulerService/src/main/java/service/shiftScheduler/ShiftSchedulerService/ShiftServiceController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/client/manager/ManagerClientApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="655">
-              <caret line="230" column="64" selection-start-line="230" selection-start-column="64" selection-end-line="230" selection-end-column="64" />
+            <state relative-caret-position="-739">
+              <caret line="230" column="85" selection-start-line="230" selection-start-column="85" selection-end-line="230" selection-end-column="85" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,8 +62,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -155,18 +154,19 @@
       <workItem from="1560711576642" duration="402000" />
       <workItem from="1560965955117" duration="12936000" />
       <workItem from="1561025308482" duration="2261000" />
-      <workItem from="1561034686518" duration="5091000" />
+      <workItem from="1561034686518" duration="7856000" />
+      <workItem from="1561052818099" duration="10902000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22623000" />
+    <option name="totallyTimeSpent" value="36290000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1924307" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1945629" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -211,8 +211,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/client/manager/Connection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+        <state relative-caret-position="255">
+          <caret line="29" column="33" lean-forward="true" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -221,8 +221,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/client/manager/ManagerClientApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="230" column="64" selection-start-line="230" selection-start-column="64" selection-end-line="230" selection-end-column="64" />
+        <state relative-caret-position="-739">
+          <caret line="230" column="85" selection-start-line="230" selection-start-column="85" selection-end-line="230" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

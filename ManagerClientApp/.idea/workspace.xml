@@ -5,8 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ManagerClientApp/app/client/manager/ManagerClientApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ManagerClientApp/app/client/manager/ManagerClientApp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/client/manager/ManagerClientApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/client/manager/ManagerClientApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ShiftSchedulerService/src/main/java/service/shiftScheduler/ShiftSchedulerService/Shift.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ShiftSchedulerService/src/main/java/service/shiftScheduler/ShiftSchedulerService/Shift.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ShiftSchedulerService/src/main/java/service/shiftScheduler/ShiftSchedulerService/ShiftDAOService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ShiftSchedulerService/src/main/java/service/shiftScheduler/ShiftSchedulerService/ShiftDAOService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,20 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/client/manager/ManagerClientApp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-739">
-              <caret line="230" column="85" selection-start-line="230" selection-start-column="85" selection-end-line="230" selection-end-column="85" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,7 +35,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="276" />
     <option name="y" value="97" />
     <option name="width" value="1440" />
@@ -70,17 +55,6 @@
             <path>
               <item name="ManagerClientApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="ManagerClientApp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManagerClientApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManagerClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManagerClientApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManagerClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -155,16 +129,15 @@
       <workItem from="1560965955117" duration="12936000" />
       <workItem from="1561025308482" duration="2261000" />
       <workItem from="1561034686518" duration="7856000" />
-      <workItem from="1561052818099" duration="10902000" />
+      <workItem from="1561052818099" duration="15322000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36290000" />
+    <option name="totallyTimeSpent" value="40710000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1945629" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -176,7 +149,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.44372293" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -221,8 +194,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/client/manager/ManagerClientApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-739">
-          <caret line="230" column="85" selection-start-line="230" selection-start-column="85" selection-end-line="230" selection-end-column="85" />
+        <state relative-caret-position="397">
+          <caret line="301" column="44" lean-forward="true" selection-start-line="301" selection-start-column="44" selection-end-line="301" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

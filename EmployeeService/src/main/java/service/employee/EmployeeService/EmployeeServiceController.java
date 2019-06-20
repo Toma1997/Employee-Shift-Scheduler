@@ -47,5 +47,4 @@ public class EmployeeServiceController {
         return service.numberOfEmployees();
     }
 
-
 }

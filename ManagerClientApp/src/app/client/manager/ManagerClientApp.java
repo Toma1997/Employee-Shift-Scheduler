@@ -17,7 +17,7 @@ public class ManagerClientApp {
         String email = "";
         String password = "";
         System.out.println("Login to Manager Client Application");
-        /*
+
         do{
             System.out.println("Enter manager email and password!");
             System.out.println("Email:");
@@ -25,7 +25,17 @@ public class ManagerClientApp {
             System.out.println("Password:");
             password = input.nextLine();
         } while(!email.equals("toma.joksimovic@gmail.com") || !password.equals("toma1997+"));
-        */
+
+        // reset schedule
+        for(int i = 0; i < 4; i++){
+            String payload =  "[]";  // take list with employee's id's for current shift
+            try {
+                Connection.postOrPut("http://localhost:1313/set-employees-to-shift/"+ i+1, payload, "PUT");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
         System.out.println("Manager is logged in!");
 
         do{
@@ -232,9 +242,9 @@ public class ManagerClientApp {
             ArrayList<ArrayList<Integer>> scheduledShifts = shiftScheduler(shiftsList, employeesList);
 
             for(int i = 0; i < scheduledShifts.size(); i++){
-                String payload =  "{\"employees\":" + scheduledShifts.get(i) + "}"; // take list with employee's id's for current shift
-                String response = Connection.postOrPut("http://localhost:1313/set-employees-to-shift/"+ i+1, payload, "PUT");
-                System.out.println(response);
+                String payload =  "" + scheduledShifts.get(i) + "";  // take list with employee's id's for current shift
+                System.out.println(payload);
+                Connection.postOrPut("http://localhost:1313/set-employees-to-shift/"+ (i+1), payload, "PUT");
             }
 
             shiftsScheduling = Connection.getOrDelete("http://localhost:1313/all-shifts", "GET");

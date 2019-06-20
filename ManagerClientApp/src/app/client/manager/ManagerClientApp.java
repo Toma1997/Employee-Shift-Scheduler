@@ -76,13 +76,13 @@ public class ManagerClientApp {
 
                     case 3:
                         System.out.println("Enter employee first name:");
-                        String firstName = input.nextLine();
+                        String firstName = input.next();
                         System.out.println("Enter employee last name:");
-                        String lastName = input.nextLine();
+                        String lastName = input.next();
                         System.out.println("Enter employee email:");
-                        String newEmail = input.nextLine();
+                        String newEmail = input.next();
                         System.out.println("Enter employee phone:");
-                        String phone = input.nextLine();
+                        String phone = input.next();
                         System.out.println("Enter employee birth year:");
                         int birth = input.nextInt();
                         System.out.println("Enter employee's year of experience in decimal:");
@@ -94,10 +94,10 @@ public class ManagerClientApp {
                                 "\"email\":" + "\"" + newEmail + "\"," +
                                 "\"phone\":" + "\"" + phone + "\"," +
                                 "\"birthYear\":" + birth + "," +
-                                "\"firstName\":" + experience + "}";
+                                "\"yearsExperience\":" + experience + "}";
 
                         try {
-                            String response = Connection.post("http://localhost:8080/add-employee", payload);
+                            String response = Connection.postOrPut("http://localhost:8080/add-employee", payload, "POST");
                             System.out.println(response);
 
                         } catch (Exception e) {
@@ -107,13 +107,13 @@ public class ManagerClientApp {
 
                     case 4:
                         System.out.println("Enter employee first name:");
-                        String firstName2 = input.nextLine();
+                        String firstName2 = input.next();
                         System.out.println("Enter employee last name:");
-                        String lastName2 = input.nextLine();
+                        String lastName2 = input.next();
                         System.out.println("Enter employee email:");
-                        String newEmail2 = input.nextLine();
+                        String newEmail2 = input.next();
                         System.out.println("Enter employee phone:");
-                        String phone2 = input.nextLine();
+                        String phone2 = input.next();
                         System.out.println("Enter employee birth year:");
                         int birth2 = input.nextInt();
                         System.out.println("Enter employee's year of experience in decimal:");
@@ -125,12 +125,12 @@ public class ManagerClientApp {
                                 "\"email\":" + "\"" + newEmail2 + "\"," +
                                 "\"phone\":" + "\"" + phone2 + "\"," +
                                 "\"birthYear\":" + birth2 + "," +
-                                "\"firstName\":" + experience2 + "}";
+                                "\"yearsExperience\":" + experience2 + "}";
 
                         System.out.println("Enter ID of employee you wanna replace:");
                         int repId = input.nextInt();
                         try {
-                            String response = Connection.post("http://localhost:8080/replace-employee/" + repId , payload2);
+                            String response = Connection.postOrPut("http://localhost:8080/replace-employee/" + repId , payload2, "PUT");
                             System.out.println(response);
 
                         } catch (Exception e) {
@@ -170,5 +170,8 @@ public class ManagerClientApp {
 
             System.out.println();
         } while(true);
+
+        System.out.println("Now when you have seen carefully data for employees, it's time to make schedule for their shifts!");
+
     }
 }

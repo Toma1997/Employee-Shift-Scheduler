@@ -33,8 +33,8 @@ public class EmployeesDAOService {
     }
 
     public Employee replaceEmployee(int id, Employee newEmployee){
-        this.employees.remove(id);
-        this.employees.add(newEmployee);
+        deleteEmployee(id);
+        addEmployee(newEmployee);
         return newEmployee;
     }
 

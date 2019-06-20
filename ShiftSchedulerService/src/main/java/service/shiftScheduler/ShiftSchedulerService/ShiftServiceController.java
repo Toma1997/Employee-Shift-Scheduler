@@ -1,10 +1,9 @@
 package service.shiftScheduler.ShiftSchedulerService;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -29,6 +28,12 @@ public class ShiftServiceController {
     @GetMapping("/number-of-shifts")
     public int shiftsCount(){
         return service.getNumberOfShifts();
+    }
+
+    // example -> localhost:1313/set-employees-to-shift/2
+    @PutMapping("/set-employees-to-shift/{id}")
+    public Shift setEmployeesToShift(@PathVariable int id, @RequestBody ArrayList<Integer> employees){
+        return service.setEmployeesToShift(id, employees);
     }
 
 

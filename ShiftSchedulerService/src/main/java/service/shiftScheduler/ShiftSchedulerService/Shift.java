@@ -1,5 +1,7 @@
 package service.shiftScheduler.ShiftSchedulerService;
 
+import java.util.ArrayList;
+
 public class Shift {
 
     private int shiftId;
@@ -7,6 +9,7 @@ public class Shift {
     private int startTime, endTime;
     private int leastPeople, maxPeople;
     private double leastExperience;
+    private ArrayList<Integer> employees;
 
     public Shift() {
 
@@ -20,6 +23,7 @@ public class Shift {
         this.leastPeople = leastPeople;
         this.maxPeople = maxPeople;
         this.leastExperience = leastExperience;
+        this.employees = new ArrayList<>();
     }
 
     public int getShiftId() {
@@ -78,4 +82,11 @@ public class Shift {
         this.leastExperience = leastExperience;
     }
 
+    public ArrayList<Integer> getEmployees() {
+        return employees;
+    }
+
+    public void setEmployees(ArrayList<Integer> employees) {
+        this.employees = employees;
+    }
 }

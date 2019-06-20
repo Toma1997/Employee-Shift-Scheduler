@@ -11,16 +11,16 @@ public class ShiftDAOService {
     private static List<Shift> shifts = new ArrayList<>();
 
     static {
-        Shift shift1 = new Shift();
+        Shift shift1 = new Shift(1, "morning", 4, 10, 2, 4, 2);
         shifts.add(shift1);
 
-        Shift shift2 = new Shift();
+        Shift shift2 = new Shift(2, "day", 10, 16, 2, 2, 1);
         shifts.add(shift2);
 
-        Shift shift3 = new Shift();
+        Shift shift3 = new Shift(3, "afternoon", 16, 22, 3, 5, 3);
         shifts.add(shift3);
 
-        Shift shift4 = new Shift();
+        Shift shift4 = new Shift(4, "night", 22, 4, 2, 4, 4);
         shifts.add(shift4);
     }
 
@@ -31,6 +31,16 @@ public class ShiftDAOService {
     public Shift findShift(int id){
         for(Shift shift: shifts){
             if(shift.getShiftId() == id){
+                return shift;
+            }
+        }
+        return null;
+    }
+
+    public Shift setEmployeesToShift(int id, ArrayList<Integer> employees){
+        for(Shift shift: shifts){
+            if(shift.getShiftId() == id){
+                shift.setEmployees(employees);
                 return shift;
             }
         }

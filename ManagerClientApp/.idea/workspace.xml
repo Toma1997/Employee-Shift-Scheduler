@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0694fc9a-d651-40db-9c6e-96be99c39938" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ShiftSchedulerService/src/main/java/service/shiftScheduler/ShiftSchedulerService/Shift.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShiftSchedulerService/src/main/java/service/shiftScheduler/ShiftSchedulerService/ShiftDAOService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShiftSchedulerService/src/main/java/service/shiftScheduler/ShiftSchedulerService/ShiftServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EmployeeService/src/main/java/service/employee/EmployeeService/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EmployeeService/src/main/java/service/employee/EmployeeService/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EmployeeService/src/main/java/service/employee/EmployeeService/EmployeesDAOService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EmployeeService/src/main/java/service/employee/EmployeeService/EmployeesDAOService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ManagerClientApp/app/client/manager/Connection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ManagerClientApp/app/client/manager/ManagerClientApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/client/manager/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/client/manager/Connection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ManagerClientApp/app/client/manager/ManagerClientApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ManagerClientApp/app/client/manager/ManagerClientApp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/client/manager/ManagerClientApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/client/manager/ManagerClientApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShiftSchedulerService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ShiftSchedulerService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../desktop.ini" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,12 +21,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/client/manager/ManagerClientApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="723">
-              <caret line="173" column="128" lean-forward="true" selection-start-line="173" selection-start-column="128" selection-end-line="173" selection-end-column="128" />
+            <state relative-caret-position="-110">
+              <caret line="111" column="78" lean-forward="true" selection-start-line="111" selection-start-column="78" selection-end-line="111" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,7 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="276" />
     <option name="y" value="97" />
     <option name="width" value="1440" />
@@ -63,8 +67,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -155,17 +159,18 @@
       <workItem from="1560711576642" duration="402000" />
       <workItem from="1560965955117" duration="12936000" />
       <workItem from="1561025308482" duration="2261000" />
+      <workItem from="1561034686518" duration="1862000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17532000" />
+    <option name="totallyTimeSpent" value="19394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1924307" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -220,8 +225,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/client/manager/ManagerClientApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="723">
-          <caret line="173" column="128" lean-forward="true" selection-start-line="173" selection-start-column="128" selection-end-line="173" selection-end-column="128" />
+        <state relative-caret-position="-110">
+          <caret line="111" column="78" lean-forward="true" selection-start-line="111" selection-start-column="78" selection-end-line="111" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

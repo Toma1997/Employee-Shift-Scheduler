@@ -77,23 +77,16 @@ public class ManagerClientApp {
                     case 3:
                         System.out.println("Enter employee first name:");
                         String firstName = input.next();
+
                         System.out.println("Enter employee last name:");
                         String lastName = input.next();
-                        System.out.println("Enter employee email:");
-                        String newEmail = input.next();
-                        System.out.println("Enter employee phone:");
-                        String phone = input.next();
-                        System.out.println("Enter employee birth year:");
-                        int birth = input.nextInt();
+
                         System.out.println("Enter employee's year of experience in decimal:");
                         double experience = input.nextDouble();
 
                         String payload = "{" +
                                 "\"firstName\":" + "\"" + firstName + "\"," +
                                 "\"lastName\":" + "\"" + lastName + "\"," +
-                                "\"email\":" + "\"" + newEmail + "\"," +
-                                "\"phone\":" + "\"" + phone + "\"," +
-                                "\"birthYear\":" + birth + "," +
                                 "\"yearsExperience\":" + experience + "}";
 
                         try {
@@ -108,23 +101,16 @@ public class ManagerClientApp {
                     case 4:
                         System.out.println("Enter employee first name:");
                         String firstName2 = input.next();
+
                         System.out.println("Enter employee last name:");
                         String lastName2 = input.next();
-                        System.out.println("Enter employee email:");
-                        String newEmail2 = input.next();
-                        System.out.println("Enter employee phone:");
-                        String phone2 = input.next();
-                        System.out.println("Enter employee birth year:");
-                        int birth2 = input.nextInt();
+
                         System.out.println("Enter employee's year of experience in decimal:");
                         double experience2 = input.nextDouble();
 
                         String payload2 = "{" +
                                 "\"firstName\":" + "\"" + firstName2 + "\"," +
                                 "\"lastName\":" + "\"" + lastName2 + "\"," +
-                                "\"email\":" + "\"" + newEmail2 + "\"," +
-                                "\"phone\":" + "\"" + phone2 + "\"," +
-                                "\"birthYear\":" + birth2 + "," +
                                 "\"yearsExperience\":" + experience2 + "}";
 
                         System.out.println("Enter ID of employee you wanna replace:");

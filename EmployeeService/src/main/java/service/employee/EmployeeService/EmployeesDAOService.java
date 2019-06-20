@@ -8,20 +8,24 @@ import java.util.List;
 @Component // this means it will be dependency for some other class
 public class EmployeesDAOService {
 
-    private static int employeeCount = 6;
+    private static int employeeCount = 10;
     private static List<Employee> employees = new ArrayList<>();
 
     static {
-        employees.add(new Employee(1, "Marko", "Nikolic", "marko@gmail.com", "064-234-222", 1992, 2));
-        employees.add(new Employee(2, "Andrej", "Jovic", "andrej@gmail.com", "061-564-222", 1991, 4));
-        employees.add(new Employee(3, "Ana", "Peric", "ana@gmail.com", "062-878-456", 1990, 1));
-        employees.add(new Employee(4, "Marija", "Maric", "marija@gmail.com", "065-123-456", 1993, 3));
-        employees.add(new Employee(5, "Miljan", "Miljanovic", "miljan@gmail.com", "060-000-789", 1994, 2));
-        employees.add(new Employee(6, "Marko", "Markovic", "markovic@gmail.com", "069-999-123", 1990, 5));
+        employees.add(new Employee(1, "Marko", "Nikolic", 2));
+        employees.add(new Employee(2, "Andrej", "Jovic", 4));
+        employees.add(new Employee(3, "Ana", "Peric", 1));
+        employees.add(new Employee(4, "Marija", "Maric", 3));
+        employees.add(new Employee(5, "Miljan", "Miljanovic", 2));
+        employees.add(new Employee(6, "Marko", "Markovic", 5));
+        employees.add(new Employee(7, "Zorana", "Zoric", 5.5));
+        employees.add(new Employee(8, "Mirko", "Mirkovic", 2.3));
+        employees.add(new Employee(9, "Anita", "Antic", 4));
+        employees.add(new Employee(10, "Jovana", "Jovanovic", 3.7));
     }
 
     public List<Employee> getAllEmployees(){
-        return this.employees;
+        return employees;
     }
 
     public Employee addEmployee(Employee employee){
@@ -39,7 +43,7 @@ public class EmployeesDAOService {
     }
 
     public Employee findOne(int id){
-        for(Employee employee: this.employees){
+        for(Employee employee: employees){
             if(employee.getEmployeeId() == id){
                 return employee;
             }

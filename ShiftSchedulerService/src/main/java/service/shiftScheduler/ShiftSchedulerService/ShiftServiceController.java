@@ -36,6 +36,4 @@ public class ShiftServiceController {
         return service.setEmployeesToShift(id, employees);
     }
 
-
-
 }

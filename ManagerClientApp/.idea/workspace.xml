@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0694fc9a-d651-40db-9c6e-96be99c39938" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/app/client/manager/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/client/manager/Connection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/client/manager/ManagerClientApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/client/manager/ManagerClientApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ShiftSchedulerService/src/main/java/service/shiftScheduler/ShiftSchedulerService/ShiftServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ShiftSchedulerService/src/main/java/service/shiftScheduler/ShiftSchedulerService/ShiftServiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/Project Documentation.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/Project Documentation.docx" afterDir="false" />
-    </list>
+    <list default="true" id="0694fc9a-d651-40db-9c6e-96be99c39938" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,17 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/client/manager/ManagerClientApp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -64,17 +49,6 @@
             <path>
               <item name="ManagerClientApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="ManagerClientApp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManagerClientApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManagerClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManagerClientApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManagerClientApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -152,16 +126,15 @@
       <workItem from="1561025308482" duration="2261000" />
       <workItem from="1561034686518" duration="7856000" />
       <workItem from="1561052818099" duration="15322000" />
-      <workItem from="1561156531283" duration="1639000" />
+      <workItem from="1561156531283" duration="1694000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42349000" />
+    <option name="totallyTimeSpent" value="42404000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19669509" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -218,7 +191,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/client/manager/ManagerClientApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="-221">
           <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
         </state>
       </provider>
